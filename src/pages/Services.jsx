@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { serviceData, classServices } from "../data/Services/ServiceData";
 
 const Services = () => {
@@ -22,7 +23,11 @@ const Services = () => {
           {classServices.map((item) => {
             const imgSrc = item.image || "/company.jpg";
             return (
-              <div key={item.id} className="flex flex-col items-center">
+              <Link
+                key={item.id}
+                to={item.path}
+                className="flex flex-col items-center"
+              >
                 <div className="rounded-full shadow-xl shadow-secondary w-24 h-24 md:w-32 md:h-32 overflow-hidden border bg-white flex items-center justify-center hover:cursor-pointer hover:scale-105 transition-transform duration-300 hover:shadow-blue-300">
                   <img
                     src={imgSrc}
@@ -33,7 +38,7 @@ const Services = () => {
                 <p className="mt-2 text-center text-sm md:text-base font-medium">
                   {item.title}
                 </p>
-              </div>
+              </Link>
             );
           })}
         </div>
