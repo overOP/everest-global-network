@@ -51,24 +51,3 @@ export const classServices = [
     image: "/public/services/classes/japanese.png",
   },
 ];
-
-export const classIelts = [
-  {
-    id: "cls-pte",
-    title: "PTE",
-    path: "/pte",
-    image: "/public/services/classes/pte.png",
-  },
-  {
-    id: "cls-duolingo",
-    title: "Duolingo English Test",
-    path: "/duolingo",
-    image: "/public/services/classes/duolingo.png",
-  },
-  {
-    id: "cls-japanese",
-    title: "Japanese",
-    path: "/japanese",
-    image: "/public/services/classes/japanese.png",
-  },
-];

@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
-import { classIelts } from "../../../data/Services/ServiceData";
+import { classServices } from "../../../data/Services/ServiceData";
 
 export default function Ielts() {
+  const otherClasses = classServices.filter((item) => item.id !== "cls-ielts");
+
   return (
     <div className=" space-y-12">
       <section className="relative w-full">
@@ -104,6 +106,62 @@ export default function Ielts() {
                 accept 5.5–6.0 with specific component thresholds.
               </p>
             </div>
+            <div className="relative h-56 sm:h-64 rounded-2xl border bg-white p-5 shadow-xl shadow-secondary">
+              <img
+                src="/carreer/germany.jpg"
+                alt="Europe"
+                className="absolute top-4 right-4 md:right-6 h-16 w-16 md:h-24 md:w-24 rounded-full ring  object-cover"
+              />
+              <p
+                className="text-xl font-semibold text-gray-800"
+                style={{ fontFamily: "'Caveat', cursive" }}
+              >
+                UK
+              </p>
+              <p className="mt-1 text-sm text-gray-700">Score: &gt;= 5.5</p>
+              <p className="mt-4 md:mt-11 text-sm leading-relaxed text-gray-600">
+                Requirements differ by country and university. Many programs
+                accept 5.5–6.0 with specific component thresholds.
+              </p>
+            </div>
+
+            <div className="relative h-56 sm:h-64 rounded-2xl border bg-white p-5 shadow-xl shadow-secondary">
+              <img
+                src="/carreer/germany.jpg"
+                alt="Europe"
+                className="absolute top-4 right-4 md:right-6 h-16 w-16 md:h-24 md:w-24 rounded-full ring  object-cover"
+              />
+              <p
+                className="text-xl font-semibold text-gray-800"
+                style={{ fontFamily: "'Caveat', cursive" }}
+              >
+                Dubai
+              </p>
+              <p className="mt-1 text-sm text-gray-700">Score: &gt;= 5.5</p>
+              <p className="mt-4 md:mt-11 text-sm leading-relaxed text-gray-600">
+                Requirements differ by university. Many programs don't have
+                strict score requirements but a 5.5–6.0 is often recommended.
+              </p>
+            </div>
+
+            <div className="relative h-56 sm:h-64 rounded-2xl border bg-white p-5 shadow-xl shadow-secondary">
+              <img
+                src="/carreer/germany.jpg"
+                alt="Europe"
+                className="absolute top-4 right-4 md:right-6 h-16 w-16 md:h-24 md:w-24 rounded-full ring  object-cover"
+              />
+              <p
+                className="text-xl font-semibold text-gray-800"
+                style={{ fontFamily: "'Caveat', cursive" }}
+              >
+                China
+              </p>
+              <p className="mt-1 text-sm text-gray-700">Score: &gt;= 5.5</p>
+              <p className="mt-4 md:mt-11 text-sm leading-relaxed text-gray-600">
+                Requirements vary by institution. Many universities accept
+                without IELTS or PTE scores.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -117,7 +175,7 @@ export default function Ielts() {
           Classes We Offer
         </h2>
         <div className="mt-6 mb-6 flex flex-wrap justify-center items-center gap-8 md:gap-8">
-          {classIelts.map((item) => {
+          {otherClasses.map((item) => {
             const imgSrc = item.image || "/company.jpg";
             return (
               <Link
