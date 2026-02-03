@@ -9,7 +9,7 @@ const team = [
   {
     name: "Er. Shivang Dutta",
     role: "Chief Executive Officer",
-    img: "/public/about/ceo.jpg",
+    img: "/public/about/ceo.png",
     highlight: false,
   },
   {
@@ -25,23 +25,23 @@ const team = [
     highlight: false,
   },
   {
-    name: "Linda Park",
-    role: "Learning Coach",
-    img: "/company.jpg",
+    name: "Dhiraj Sah",
+    role: "Managing Director",
+    img: "/public/about/MD.png",
     highlight: false,
   },
   {
-    name: "Priya Patel",
-    role: "Program Manager",
-    img: "/company.jpg",
+    name: "Pradeep Chaudhary",
+    role: "IT Head",
+    img: "/public/about/IT.png",
     highlight: false,
   },
-  {
-    name: "Ryan Lee",
-    role: "Student Success",
-    img: "/company.jpg",
-    highlight: false,
-  },
+  // {
+  //   name: "Ryan Lee",
+  //   role: "Student Success",
+  //   img: "/company.jpg",
+  //   highlight: false,
+  // },
 ];
 
 const About = () => {
@@ -156,7 +156,7 @@ const About = () => {
           <div className="bg-white rounded-2xl p-8 shadow-sm">
             <p
               className="text-2xl text-emerald-500 md:text-3xl font-semibold text-center"
-              style={{ fontFamily: "'Caveat', cursive  " }} 
+              style={{ fontFamily: "'Caveat', cursive  " }}
             >
               Our Mission
             </p>

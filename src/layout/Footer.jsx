@@ -1,31 +1,30 @@
-import { useState } from "react";
-import { Send } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const Footer = () => {
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [status, setStatus] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [message, setMessage] = useState("");
+  // const [status, setStatus] = useState("");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("Sending...");
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setStatus("Sending...");
 
-    try {
-      const res = await fetch("http://localhost:5000/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, message }),
-      });
+  //   try {
+  //     const res = await fetch("http://localhost:5000/api/contact", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify({ email, message }),
+  //     });
 
-      if (!res.ok) throw new Error("Failed");
+  //     if (!res.ok) throw new Error("Failed");
 
-      setStatus("Sent successfully ✔");
-      setEmail("");
-      setMessage("");
-    } catch {
-      setStatus("Failed to send ❌");
-    }
-  };
+  //     setStatus("Sent successfully ✔");
+  //     setEmail("");
+  //     setMessage("");
+  //   } catch {
+  //     setStatus("Failed to send ❌");
+  //   }
+  // };
 
   return (
     <footer className="bg-card border-t border-border">
@@ -58,7 +57,36 @@ const Footer = () => {
           </div>
 
           {/* Compact Footer Form */}
-          <form
+
+          <form className="w-full md:w-auto flex flex-col sm:flex-row items-stretch gap-3 space-x-2">
+            <a
+              href="https://api.whatsapp.com/message/P2LICPEUG3BYK1?autoload=1&app_absent=0"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="h-15 w-15 cursor-pointer hover:scale-105 transition-transform duration-300"
+                src="/public/whatsAPp.png"
+                alt="whatsapp"
+              />
+            </a>
+
+            <a
+              href="https://api.whatsapp.com/message/P2LICPEUG3BYK1?autoload=1&app_absent=0"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button
+                type="button"
+                className="border border-green-500 text-green-500 hover:bg-green-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center transition mt-2"
+              >
+                Contact Us
+                <ArrowRight className="inline-block ml-2" />
+              </button>
+            </a>
+          </form>
+
+          {/* <form
             onSubmit={handleSubmit}
             className="w-full md:w-auto flex flex-col sm:flex-row items-stretch gap-3"
           >
@@ -86,7 +114,7 @@ const Footer = () => {
             >
               Send <Send size={14} />
             </button>
-          </form>
+          </form> */}
         </div>
 
         {/* Status */}

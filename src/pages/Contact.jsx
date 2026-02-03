@@ -73,7 +73,33 @@ const ContactSection = () => {
           </div>
 
           {/* Right Form */}
-          <div className="relative">
+
+          <div className="h-86 w-96 border rounded-2xl border-primary sm:mx-auto md:mt-20">
+            <img
+              src="/public/whatsAPp.png"
+              alt="Contact Us"
+              className="h-20 w-20 items-center flex mx-auto mt-16"
+            />
+            <h2 className="font-display text-xl md:text-2xl font-bold mb-6 text-center mt-6">
+              Chat With Us
+            </h2>
+            <p className="text-muted-foreground text-lg mb-8 leading-relaxed text-center">
+              Get your consultation from our experts.
+            </p>
+            <button className="flex mx-auto">
+              <a
+                href="https://api.whatsapp.com/message/P2LICPEUG3BYK1?autoload=1&app_absent=0"
+                target="_blank"
+                rel="noreferrer"
+                className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg flex items-center mx-auto mb-10"
+              >
+                <span className="">Chat on WhatsApp</span>
+                <ArrowRight className="ml-2 " />
+              </a>
+            </button>
+          </div>
+
+          {/* <div className="relative">
             <div className="absolute inset-0 bg-gradient-gold opacity-10 rounded-2xl blur-xl" />
 
             <form className="relative bg-card border border-border rounded-2xl p-8 shadow-elevated">
@@ -145,6 +171,8 @@ const ContactSection = () => {
               </div>
             </form>
           </div>
+          
+          </div> */}
           <div className="lg:col-span-2">
             <div className="relative bg-card border border-border rounded-2xl overflow-hidden shadow-elevated h-96">
               <iframe
