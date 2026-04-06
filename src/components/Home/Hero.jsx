@@ -19,15 +19,17 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 flex items-center justify-center md:justify-start min-h-svh px-4 sm:px-6 md:px-16">
         <div className="w-full max-w-2xl text-white text-center md:text-left">
-          
-          <h1 className="text-[1.9rem] sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight sm:leading-tight md:leading-snug" >
+          <h1 className="text-[1.9rem] sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight sm:leading-tight md:leading-snug">
             Welcome to{" "}
             <span className="block sm:inline text-blue-400">
               Everest Global Network
             </span>
           </h1>
 
-          <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed"  style={{ fontFamily: "'Caveat', cursive" }}>
+          <p
+            className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed"
+            style={{ fontFamily: "'Caveat', cursive" }}
+          >
             Connecting the world through innovation, reliability, and excellence
           </p>
 
