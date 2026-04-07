@@ -2,6 +2,7 @@ import { NavLink, Link } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { NavData } from "../data/Nav/data";
+import logo from "/Untitled design.mp4"
 
 const WHATSAPP_URL =
   "https://api.whatsapp.com/message/P2LICPEUG3BYK1?autoload=1&app_absent=0";
@@ -15,7 +16,7 @@ const Nav = () => {
         {/* Logo */}
         <Link to="/">
           <video
-            src="/Untitled design.mp4"
+            src={logo}
             autoPlay
             loop
             muted
@@ -34,7 +35,7 @@ const Nav = () => {
                     href={WHATSAPP_URL}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-2 rounded-md px-3 py-2 transition-colors duration-200 bg-blue-600 text-white hover:bg-blue-700"
+                    className="inline-flex items-center gap-2 rounded-md px-2 py-0.5 transition-colors duration-200 bg-blue-600 text-white hover:bg-blue-700"
                   >
                     <span className="inline-flex items-center gap-2 align-middle">
                       {(item.icon || item.image) && (

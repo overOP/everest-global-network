@@ -1,4 +1,5 @@
 import { Mail, MapPin, Phone, ArrowRight } from "lucide-react";
+import whatapp from "/public/whatsAPp.png"
 
 const ContactSection = () => {
   const MAP_EMBED_URL =
@@ -76,7 +77,7 @@ const ContactSection = () => {
 
           <div className="h-86 w-96 border rounded-2xl border-primary sm:mx-auto md:mt-20">
             <img
-              src="/public/whatsAPp.png"
+              src={whatapp}
               alt="Contact Us"
               className="h-20 w-20 items-center flex mx-auto mt-16"
             />

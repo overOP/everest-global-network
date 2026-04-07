@@ -5,43 +5,29 @@ const stats = [
   { value: "100K", label: "Trusted Students" },
 ];
 
+import bibek from "/public/about/founder.png"
+import ravi from "/public/about/cc.png"
+import dhiraj from "/public/about/MD.png"
+
 const team = [
-  {
-    name: "Er. Shivang Dutta",
-    role: "Chief Executive Officer",
-    img: "/public/about/ceo.png",
-    highlight: false,
-  },
   {
     name: "Mr. Bibek Sharma",
     role: "Founder",
-    img: "/public/about/founder.png",
+    img: bibek,
     highlight: true,
   },
   {
     name: "Mr. Ravi Kishan Yadav",
     role: "Head of Admissions and Chief Coordinator",
-    img: "/public/about/cc.png",
+    img: ravi,
     highlight: false,
   },
   {
     name: "Dhiraj Sah",
     role: "Managing Director",
-    img: "/public/about/MD.png",
+    img: dhiraj,
     highlight: false,
-  },
-  {
-    name: "Pradeep Chaudhary",
-    role: "IT Head",
-    img: "/public/about/IT.png",
-    highlight: false,
-  },
-  // {
-  //   name: "Ryan Lee",
-  //   role: "Student Success",
-  //   img: "/company.jpg",
-  //   highlight: false,
-  // },
+  }
 ];
 
 const About = () => {

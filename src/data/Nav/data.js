@@ -1,3 +1,4 @@
+import b2b from "/public/handshake.png"
 export const NavData = [
   {
     id: 1,
@@ -27,6 +28,6 @@ export const NavData = [
   {
     id: 6,
     title: "B2B",
-    image: "/public/handshake.png",
+    image: b2b,
   },
 ];

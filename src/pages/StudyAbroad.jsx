@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
 import { colleges, countries } from "../data/StudyAbroad/StudyAbroad";
+import studyAbroad from "/public/about/studyAbroad.png"
 
 const SectionTitle = ({ children }) => (
   <h2
@@ -28,7 +29,7 @@ const StudyAbroad = () => {
       <section className="w-full lg:h-180 mx-auto px-6 mb-10">
         <div className="bg-white rounded-2xl shadow-sm ">
           <img
-            src="/public/about/studyAbroad.png"
+            src={studyAbroad}
             alt="Study Abroad"
             className="w-screen lg:h-180 sm:h-80  rounded-2xl object-cover"
           />
@@ -37,7 +38,7 @@ const StudyAbroad = () => {
 
       {/* Popular Colleges */}
       <SectionTitle>Popular Colleges</SectionTitle>
-      <section className="max-w-6xl mx-auto px-6 mt-6 mb-16">
+      <section className="max-w-7xl mx-auto px-6 mt-6 mb-16">
         <div className="relative">
           {/* Left/Right buttons */}
           <button

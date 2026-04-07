@@ -1,30 +1,8 @@
 import { ArrowRight } from "lucide-react";
+import logo from "/7218.png"
+import whatsapp from "/public/whatsAPp.png"
 
 const Footer = () => {
-  // const [email, setEmail] = useState("");
-  // const [message, setMessage] = useState("");
-  // const [status, setStatus] = useState("");
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   setStatus("Sending...");
-
-  //   try {
-  //     const res = await fetch("http://localhost:5000/api/contact", {
-  //       method: "POST",
-  //       headers: { "Content-Type": "application/json" },
-  //       body: JSON.stringify({ email, message }),
-  //     });
-
-  //     if (!res.ok) throw new Error("Failed");
-
-  //     setStatus("Sent successfully ✔");
-  //     setEmail("");
-  //     setMessage("");
-  //   } catch {
-  //     setStatus("Failed to send ❌");
-  //   }
-  // };
 
   return (
     <footer className="bg-card border-t border-border">
@@ -36,7 +14,7 @@ const Footer = () => {
               {/* Logo */}
               <div className="flex items-center gap-2">
                 <img
-                  src="/7218.png"
+                  src={logo}
                   alt="Logo"
                   className="w-14 h-10 rounded-full object-cover"
                 />
@@ -66,7 +44,7 @@ const Footer = () => {
             >
               <img
                 className="h-15 w-15 cursor-pointer hover:scale-105 transition-transform duration-300"
-                src="/public/whatsAPp.png"
+                src={whatsapp}
                 alt="whatsapp"
               />
             </a>
@@ -85,36 +63,6 @@ const Footer = () => {
               </button>
             </a>
           </form>
-
-          {/* <form
-            onSubmit={handleSubmit}
-            className="w-full md:w-auto flex flex-col sm:flex-row items-stretch gap-3"
-          >
-            <input
-              type="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Email"
-              className="h-9 w-full sm:w-56 px-3 text-sm rounded-md bg-background border border-border text-foreground placeholder-muted-foreground focus:outline-none focus:border-primary transition-colors"
-            />
-
-            <input
-              type="text"
-              required
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              placeholder="Message"
-              className="h-9 w-full sm:w-64 px-3 text-sm rounded-md bg-background border border-border text-foreground placeholder-muted-foreground focus:outline-none focus:border-primary transition-colors"
-            />
-
-            <button
-              type="submit"
-              className="h-9 px-4 inline-flex items-center justify-center gap-2 rounded-md bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition"
-            >
-              Send <Send size={14} />
-            </button>
-          </form> */}
         </div>
 
         {/* Status */}
